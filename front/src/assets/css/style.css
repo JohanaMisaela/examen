@@ -1,0 +1,13 @@
+/* css navbar */
+.navbar{
+    display: inline-flex;
+    width: 100%;
+    height: 100px;
+   
+}
+.logo{
+    width: 400px;
+    margin-left: 2em;
+}
+
+/* css fin navbar */

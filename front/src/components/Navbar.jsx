@@ -3,12 +3,13 @@ import logo from '../assets/images/logo.jpeg'
 import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouseChimney , faMoneyBillTransfer, faHouseCrack, faCartShopping, faHeart} from '@fortawesome/free-solid-svg-icons'
+import '../assets/css/style.css'
 function Navbar() {
   return (
     <div>
         <div className="navbar">
             <div className="logo">
-                <img src={logo}/>
+                <img src={logo} style={{width:"100%"}}/>
             </div>
             <div className="menu">
                 <ul>
