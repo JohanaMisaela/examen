@@ -83,8 +83,106 @@ function Sidebar() {
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"13em"
-                    }}/>
+                    }}
+                    onClick={togglePanel}
+                    />
             </div>
+            {showPanel && 
+            <div className="pannel">
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
+                    fontSize:"20px",
+                    color:"rgb(114, 110, 110)",
+                    marginLeft:"4em",
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
+                    fontSize:"20px",
+                    color:"rgb(114, 110, 110)",
+                    marginLeft:"4em",
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
+                    fontSize:"20px",
+                    color:"rgb(114, 110, 110)",
+                    marginLeft:"4em",
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
+                    fontSize:"20px",
+                    color:"rgb(114, 110, 110)",
+                    marginLeft:"4em",
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
+            </div>
+            }
+             <div className="cat">
+                <FontAwesomeIcon icon={faNetworkWired} style={{
+                    fontSize:"20px",
+                    color:"rgb(114, 110, 110)",
+                    marginLeft:"4em",
+                    marginRight:"1em"
+                    }}/>
+                HighTech
+                <FontAwesomeIcon icon={faAdd} style={{
+                    fontSize:"20px",
+                    color:"rgb(114, 110, 110)",
+                    marginLeft:"13em",
+                    }} 
+                    onClick={togglePanel}
+                    />
+            </div> 
+            {showPanel && 
+            <div className="pannel">
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
+                    fontSize:"20px",
+                    color:"rgb(114, 110, 110)",
+                    marginLeft:"4em",
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
+                    fontSize:"20px",
+                    color:"rgb(114, 110, 110)",
+                    marginLeft:"4em",
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
+                    fontSize:"20px",
+                    color:"rgb(114, 110, 110)",
+                    marginLeft:"4em",
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
+                    fontSize:"20px",
+                    color:"rgb(114, 110, 110)",
+                    marginLeft:"4em",
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
+            </div>
+            }
             <div className="cat">
                 <FontAwesomeIcon icon={faNetworkWired} style={{
                     fontSize:"20px",
@@ -97,78 +195,50 @@ function Sidebar() {
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"13em"
-                    }}/>
+                    }}
+                    onClick={togglePanel}
+                    />
             </div>
-            <div className="cat">
-                <FontAwesomeIcon icon={faNetworkWired} style={{
+            {showPanel && 
+            <div className="pannel">
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
-                    marginRight:"1em"
-                    }}/>
-                HighTech
-                <FontAwesomeIcon icon={faAdd} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em"
-                    }}/>
-            </div>
-            <div className="cat">
-                <FontAwesomeIcon icon={faNetworkWired} style={{
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
-                    marginRight:"1em"
-                    }}/>
-                HighTech
-                <FontAwesomeIcon icon={faAdd} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em"
-                    }}/>
-            </div>
-            <div className="cat">
-                <FontAwesomeIcon icon={faNetworkWired} style={{
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
-                    marginRight:"1em"
-                    }}/>
-                HighTech
-                <FontAwesomeIcon icon={faAdd} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em"
-                    }}/>
-            </div>
-            <div className="cat">
-                <FontAwesomeIcon icon={faNetworkWired} style={{
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
+                <div className="sousCat">
+                    <FontAwesomeIcon icon={faLaptop} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
-                    marginRight:"1em"
-                    }}/>
-                HighTech
-                <FontAwesomeIcon icon={faAdd} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em"
-                    }}/>
+                    marginRight:"1em",
+                    marginTop:"1em",
+                    }}/>Laptop
+                </div>
             </div>
-            <div className="cat">
-                <FontAwesomeIcon icon={faNetworkWired} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em"
-                    }}/>
-                HighTech
-                <FontAwesomeIcon icon={faAdd} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em"
-                    }}/>
-            </div>
+            }
             
         </div>
     </div>

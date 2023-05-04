@@ -15,25 +15,44 @@ function Navbar() {
             <div className="menu">
                 <ul className='menu1'>
                     <li>
+                        <Link to='/' style={{
+                        textDecoration:"none",
+                        color:"rgb(114, 110, 110)"
+
+                    }}>
                     <FontAwesomeIcon icon={faHouseChimney} style={{
                         marginRight:"0.5em", 
                         fontSize:"20px"
                         }}/>
                      Acceuil
+                     </Link>
                     </li>
                     <li>
+                    <Link to='/' style={{
+                        textDecoration:"none",
+                        color:"rgb(114, 110, 110)"
+
+                    }}>
                     <FontAwesomeIcon icon={faMoneyBillTransfer} style={{
                         marginRight:"0.5em", 
                         fontSize:"20px"
                         }}/>
                      Faire un devis
+                     </Link>
+
                     </li>
                     <li>
+                    <Link to='/' style={{
+                        textDecoration:"none",
+                        color:"rgb(114, 110, 110)"
+                    }}>
                     <FontAwesomeIcon icon={faHouseCrack} style={{
                         marginRight:"0.5em", 
                         fontSize:"20px"
                         }}/>
                      Place de Marché
+                     </Link>
+
                     </li>
                 </ul>
                 <ul className='user'>
