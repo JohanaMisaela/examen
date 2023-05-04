@@ -4,6 +4,7 @@
     width: 100%;
     height: 100px;
     box-shadow: 0px 0px 3px 0px  rgb(114, 110, 110);
+    
 }
 .logo{
     width: 400px;
@@ -38,18 +39,34 @@ ul li{
     font-size: 20px;
     color: #c02b27;
     cursor: pointer;
+    margin-left: 25em;
 }
 .icone:hover{
     color: #c02b27;
 }
+.icone {
+    margin-left: 5em;
+}
+
  /* fin navbar */
  /* css sidebar */
  .sidebar{
     width: 30em;
     background-color: #c02b27;
+    height: auto; 
+ }
+ .pannel{
+    width: 100%;
     height: auto;
-    
-   
+ }
+ .sousCat{
+    height: 60px;
+    box-shadow: 0px 0px 2px 0px rgb(195, 195, 195);
+
+ }
+ .sousCat:hover{
+    color: #c02b27;
+    cursor: pointer;
  }
  .categorie{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -86,11 +103,11 @@ ul li{
  /* css footer */
  .footer{
     width: auto;
-    height: 500px;
+    height: auto;
     background-color: #c02b27;
  }
 .footer1{
-    height: 250px;
+    height: 300px;
     background-color: white;
 }
 
@@ -99,4 +116,97 @@ ul li{
     width: 450px;
     height: 150px;
 }
+.footer1 .logoFooter p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px ;
+    color: rgb(114, 110, 110);
+}
+.contact{
+    width: 30em;
+    height: auto;
+   margin-top: 25px;
+   margin-top: 5em
+}
+.contact p{
+    margin-left: 2em;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    
+}
+.contact a{
+    color: white;
+    text-decoration: none;
+}
+.contact a:hover{
+    color: rgb(0, 0, 0);
+}
+.information {
+    width: 30em;
+    height: auto;
+    margin-top: -170px;
+    margin-left: 50em;
+}
+.information h1 {
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.information p{
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.left{
+    text-align: center;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 100em;
+    margin-top:-220px;
+    }
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 3 / 1 / 4 / 2; }
+.div8 { grid-area: 3 / 2 / 4 / 3; }
+.div9 { grid-area: 3 / 3 / 4 / 4; }
+.copy{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 2em;
+}
  /* css fin footer */
+/* page text */
+.pagetext{
+    margin-left: 15em;
+    margin-right: 15em;
+}
+.header{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+.sousheader{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+
+}
+.paragraph{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(114, 110, 110);
+    text-align: left;
+
+}
+/* page text */
