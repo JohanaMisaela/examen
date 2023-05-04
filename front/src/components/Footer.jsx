@@ -6,6 +6,7 @@ import pay3 from '../assets/images/mvola.png'
 import pay4 from '../assets/images/master.png'
 import pay5 from '../assets/images/paypal.png'
 // import pay6 from '../assets/images/.png'
+import {Link} from 'react-router-dom'
 
 
 function Footer() {
@@ -28,12 +29,21 @@ function Footer() {
             <p><b>Numero :</b> (+261)32 55 504 44</p>
         </div>
         <div className="information">
-            <h1>Infromation</h1>
+            <h1>Information</h1>
             <div className="left">
-            <p>Livraison</p>
-            <p>Conditions</p>
-            <p>Mentions legales</p>
-            <p>Livraison</p>
+           <Link to='/livraison' style={{
+            textDecoration:"none"
+           }}><p>Livraison</p></Link> 
+           <Link to='/conditions' style={{
+            textDecoration:"none"
+           }}><p>Conditions</p></Link> 
+           <Link to='/mentions'style={{
+            textDecoration:"none"
+           }}><p>Mentions legales</p></Link> 
+           <Link to='/paiement' style={{
+            textDecoration:"none"
+           }}><p>Paiement</p></Link> 
+
             </div>  
         </div>
         <div class="parent">

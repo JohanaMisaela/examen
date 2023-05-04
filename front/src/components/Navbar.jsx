@@ -9,7 +9,8 @@ function Navbar() {
     <div>
         <div className="navbar">
             <div className="logo">
-                <img src={logo} style={{width:"100%"}}/>
+                <Link to='/' >
+                <img src={logo} style={{width:"100%"}}/></Link>
             </div>
             <div className="menu">
                 <ul className='menu1'>

@@ -28,7 +28,7 @@ ul li{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(114, 110, 110);
     font-size: 20px;
-    margin-left: 2em;
+    margin-left: 5em;
 }
 .menu .menu1 li:hover{
     cursor: pointer;
@@ -39,7 +39,7 @@ ul li{
     font-size: 20px;
     color: #c02b27;
     cursor: pointer;
-    margin-left: 25em;
+    margin-left: 20em;
 }
 .icone:hover{
     color: #c02b27;
@@ -162,6 +162,9 @@ ul li{
 .left{
     text-align: center;
 }
+.left Link{
+    text-decoration: none;
+}
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -191,6 +194,8 @@ ul li{
 .pagetext{
     margin-left: 15em;
     margin-right: 15em;
+    margin-bottom: -20em;
+    margin-top: 10em;
 }
 .header{
     font-size: 30px;
