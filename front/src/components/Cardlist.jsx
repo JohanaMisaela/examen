@@ -2,6 +2,7 @@ import React from 'react';
 import produit from '../assets/images/vista.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCartShopping, faHeart, faEye} from '@fortawesome/free-solid-svg-icons'
+import {Link} from 'react-router-dom'
 
 function Cardlist() {
   return (
@@ -11,7 +12,7 @@ function Cardlist() {
         </div>
         <div className="card">
             <div className="produitPicture">
-                <img src={produit} alt="" />
+              <Link to='/view'><img src={produit} alt="" /></Link>  
             </div>
             <div className="produitInfo">
                 <p className="header">Hot pot serie de 03pcs</p>

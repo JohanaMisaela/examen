@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faNetworkWired, faAdd, faLaptop, faMinus} from '@fortawesome/free-solid-svg-icons'
+import { faNetworkWired, faAdd, faLaptop, faMinus, faMobile, faMicrochip, faTv, faHeadphones} from '@fortawesome/free-solid-svg-icons'
 
 function Sidebar() {
     const [showPanel, setShowPanel] = useState(false); // initial state: panel is hidden
@@ -16,7 +16,7 @@ function Sidebar() {
         <div className="categorie"><p>Toutes Categories</p></div>
         <div className="listCategorie">
             <div className="cat">
-                <FontAwesomeIcon icon={faNetworkWired} style={{
+                <FontAwesomeIcon icon={faMicrochip} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
@@ -43,31 +43,31 @@ function Sidebar() {
                     }}/>Laptop
                 </div>
                 <div className="sousCat">
-                    <FontAwesomeIcon icon={faLaptop} style={{
+                    <FontAwesomeIcon icon={faMobile} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
                     marginRight:"1em",
                     marginTop:"1em",
-                    }}/>Laptop
+                    }}/>Mobile
                 </div>
                 <div className="sousCat">
-                    <FontAwesomeIcon icon={faLaptop} style={{
+                    <FontAwesomeIcon icon={faTv} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
                     marginRight:"1em",
                     marginTop:"1em",
-                    }}/>Laptop
+                    }}/>Télévision
                 </div>
                 <div className="sousCat">
-                    <FontAwesomeIcon icon={faLaptop} style={{
+                    <FontAwesomeIcon icon={faHeadphones} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
                     marginRight:"1em",
                     marginTop:"1em",
-                    }}/>Laptop
+                    }}/>Casques
                 </div>
             </div>
             }

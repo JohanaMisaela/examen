@@ -222,10 +222,12 @@ ul li{
     width: 95em;
     height: auto;
     background-color: white;
+    box-shadow: 0px 2px 0px 0px rgba(81, 81, 81, 0.47);
     box-shadow: 0px 0px 2px 0px rgb(195, 195, 195);
     margin-top: -7em;
     
 }
+
 .col{
     display: inline-block;
 }
@@ -299,3 +301,154 @@ ul li{
     display: flex;
 }
 /* fin cardlist  */
+/* viewitem css */
+.container1 {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  background: white;
+  border-radius: 10px;
+  top: 2em;
+  margin-left: 2em;
+  bottom: 2em;
+  min-width: 700px;
+
+}
+.images{
+    width: 40%;
+    height: 100%;
+    box-shadow: 1px 0px 0px 0px rgb(114, 110, 110);
+
+}
+p {
+  font-size: 0.6em;
+  color: #BA7E7E;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 1.2em;
+  color: #4E4E4E;
+  margin-top: -5px;
+}
+
+h2 {
+  color: #4E4E4E;
+  margin-top: -5px;
+}
+
+p {
+  color: rgb(114, 110, 110);
+}
+
+.img1 {
+  width: 100%;
+  height: 100%;
+  margin-left: 2em;
+  
+}
+
+.slideshow-buttons {
+  top: 70%;
+  display: none;
+}
+
+.one, .two, .three, .four {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+
+.one {
+  left: 22%;
+}
+
+.two {
+  left: 27%;
+}
+
+.three {
+  left: 32%;
+}
+
+.four {
+  left: 37%;
+}
+
+.product {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 10%;
+  left: 65%;
+  box-shadow: 0px 1px 0px 0px rgb(114, 110, 110);
+
+}
+
+.desc {
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 17px;
+  color: #4E4E4E;
+  font-size: 0.7em;
+  line-height: 1.6em;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+button {
+  background: #c02b27;
+  padding: 10px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  margin: -1px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #F5F5F5;
+  cursor: pointer;
+
+}
+button:hover {
+  background: #c02c2773;
+  transition: all 0.4s ease-in-out;
+}
+
+.add {
+  width: 60%;
+  margin-top: 5em;
+  height: 50px;
+  font-size: 15px;
+
+}
+.add1 {
+    width: 60%;
+    margin-top: 1em;
+    height: 50px;
+    font-size: 15px;
+  }
+
+.like {
+  width: 22%;
+  height: 50px;
+  font-size: 15px;
+
+}
+
+.like1 {
+    width: 22%;
+    height: 50px;
+    font-size: 15px;
+  
+  }
+.product{
+    margin-left: -6em;
+    width: 30em;
+    margin-top: 4em;
+}
+/* view item css fin */

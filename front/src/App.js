@@ -6,6 +6,7 @@ import Livraison from './pages/Livraison';
 import Conditions from './pages/Conditions';
 import Mentions from './pages/Mentions';
 import Paiement from './pages/Paiement';
+import Viewpro from './pages/Viewpro';
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,8 @@ function App() {
       <Route path="/conditions" element={<Conditions />}></Route>
       <Route path="/mentions" element={<Mentions />}></Route>
       <Route path="/paiement" element={<Paiement />}></Route>
+      <Route path="/view" element={<Viewpro />}></Route>
+
 
     </Routes>
   </BrowserRouter>
