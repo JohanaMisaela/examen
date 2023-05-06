@@ -58,6 +58,7 @@ ul li{
  .pannel{
     width: 100%;
     height: auto;
+    display: none;
  }
  .sousCat{
     height: 60px;
@@ -467,8 +468,12 @@ button:hover {
     border-bottom-left-radius: 20px;
     border: 0;
     box-shadow: 1px 1px 1px 1px rgb(114, 110, 110);
-    padding-left: 15px;
-    
+    padding-left: 15px;   
+}
+.search:hover{
+    border: 0;
+    box-shadow: 2px 1px 1px 2px rgb(114, 110, 110);
+
 }
 .fasearch{
   background: #c02b27;

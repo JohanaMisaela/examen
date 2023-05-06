@@ -3,11 +3,58 @@ import logo from '../assets/images/logo.jpeg'
 import Searchbar from '../components/Searchbar'
 import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouseChimney , faMoneyBillTransfer, faHouseCrack, faCartShopping, faHeart, faGripLinesVertical} from '@fortawesome/free-solid-svg-icons'
+import { 
+    faHouseChimney , 
+    faMoneyBillTransfer, 
+    faHouseCrack, 
+    faCartShopping, 
+    faHeart, 
+    faGripLinesVertical,
+    faLink ,
+    faCodeCompare
+
+} from '@fortawesome/free-solid-svg-icons'
 import '../assets/css/style.css'
 function Navbar() {
   return (
     <div>
+        <div className="topnavbar" style={{
+            width:"30em",
+            height:"50px",
+            backgroundColor:"white",
+            marginLeft:"120em",
+            display:"flex",
+            marginTop:"2em"
+        }}>
+            <FontAwesomeIcon icon={faLink} style={{
+                        marginRight:"0.5em", 
+                        fontSize:"20px",
+                        color:"rgb(114, 110, 110)",
+                        marginLeft:"0.5em"
+
+
+                        }}/> 
+            <FontAwesomeIcon icon={faGripLinesVertical} style={{
+                        marginRight:"0.5em", 
+                        fontSize:"20px",
+                        color:"rgb(114, 110, 110)",
+                        marginLeft:"0.5em"
+
+
+                        }}/>
+            <p className="paragraph" style={{
+                marginTop:"-0.1em"
+            }}>Compare</p>
+            <FontAwesomeIcon icon={faCodeCompare} style={{
+                        marginRight:"0.5em", 
+                        fontSize:"20px",
+                        color:"rgb(114, 110, 110)",
+                        marginLeft:"0.5em"
+
+
+                        }}/>
+
+        </div>
         <div className="navbar">
             <div className="logo">
                 <Link to='/' >
