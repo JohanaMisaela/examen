@@ -13,7 +13,7 @@ function Sidebar() {
 
   return (
     <div className='sidebar'>
-        <div className="categorie"><p>Toutes Categories</p></div>
+        <div className="categorie"><p className='sousheader'>Toutes Categories</p></div>
         <div className="listCategorie">
             <div className="cat">
                 <FontAwesomeIcon icon={faMicrochip} style={{

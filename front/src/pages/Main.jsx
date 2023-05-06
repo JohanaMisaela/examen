@@ -10,9 +10,12 @@ function Main() {
         <Navbar />
         <div className='col'>
           <div className="row1">
-          <Sidebar/>
-          </div>
-          <div className="row2">
+            
+        <Sidebar/>
+        </div>
+       
+
+        <div className="row2">
         <Cardlist/>
           </div>
         </div>

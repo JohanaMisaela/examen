@@ -18,10 +18,10 @@ function ViewItem() {
         <h2 className='paragraph'>100$</h2>
         <p className="desc paragraph">
         Hot pot serie de 03pcs 2,5/1,5/1l (12sets) <br />
-                Isolation thermique hautement efficace <br />
-Pot de revêtement intérieur en acier inoxydable <br />
-Convient pour une utilisation chaude et froide <br />
-Peut garder les aliments chauds ou froids plus longtemps
+        Isolation thermique hautement efficace <br />
+        Pot de revêtement intérieur en acier inoxydable <br />
+        Convient pour une utilisation chaude et froide <br />
+        Peut garder les aliments chauds ou froids plus longtemps
             </p>
         <div className="buttons" >
           <button className="add">Add to Cart

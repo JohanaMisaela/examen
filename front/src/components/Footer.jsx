@@ -33,16 +33,24 @@ function Footer() {
             <div className="left">
            <Link to='/livraison' style={{
             textDecoration:"none"
-           }}><p>Livraison</p></Link> 
+           }}
+           ><p>Livraison</p>
+           </Link> 
            <Link to='/conditions' style={{
             textDecoration:"none"
-           }}><p>Conditions</p></Link> 
+           }}>
+            <p>Conditions</p>
+            </Link> 
            <Link to='/mentions'style={{
             textDecoration:"none"
-           }}><p>Mentions legales</p></Link> 
+           }}>
+            <p>Mentions legales</p>
+            </Link> 
            <Link to='/paiement' style={{
             textDecoration:"none"
-           }}><p>Paiement</p></Link> 
+           }}>
+            <p>Paiement</p>
+            </Link> 
 
             </div>  
         </div>

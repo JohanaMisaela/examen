@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/images/logo.jpeg'
+import Searchbar from '../components/Searchbar'
 import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouseChimney , faMoneyBillTransfer, faHouseCrack, faCartShopping, faHeart, faGripLinesVertical} from '@fortawesome/free-solid-svg-icons'
@@ -89,6 +90,7 @@ function Navbar() {
                 </ul>
             </div>
         </div>
+        <Searchbar />
     </div>
   )
 }
