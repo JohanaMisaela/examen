@@ -22,7 +22,7 @@ function Navbar() {
             width:"30em",
             height:"50px",
             backgroundColor:"white",
-            marginLeft:"120em",
+            marginLeft:"100em",
             display:"flex",
             marginTop:"2em"
         }}>
@@ -30,7 +30,7 @@ function Navbar() {
                         marginRight:"0.5em", 
                         fontSize:"20px",
                         color:"rgb(114, 110, 110)",
-                        marginLeft:"0.5em"
+                        marginLeft:"8em"
 
 
                         }}/> 
@@ -104,8 +104,12 @@ function Navbar() {
                     </li>
                 </ul>
                 <ul className='user'>
-                    <li>
-                        Connexion 
+                    <li> <Link to='/auth' style={{
+                        textDecoration:"none",
+                        color:"#c02b27"
+                    }}>
+                    Connexion 
+                    </Link>
                         <FontAwesomeIcon icon={faGripLinesVertical} style={{
                             marginRight:"0.5em", 
                             marginLeft:"0.5em"

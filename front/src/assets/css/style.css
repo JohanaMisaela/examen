@@ -1,3 +1,4 @@
+
 /* css navbar */
 .navbar{
     display: inline-flex;
@@ -323,11 +324,6 @@ ul li{
     box-shadow: 1px 0px 0px 0px rgb(114, 110, 110);
 
 }
-p {
-  font-size: 0.6em;
-  color: #BA7E7E;
-  letter-spacing: 1px;
-}
 
 h1 {
   font-size: 1.2em;
@@ -488,3 +484,12 @@ button:hover {
 
 }
 /* fin search bar */
+/* auth css */
+.logincard{
+    width: 100em;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 10em;
+    border:1px solid #ededed;
+}
+/* finauth css */
