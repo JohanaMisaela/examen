@@ -143,7 +143,7 @@ function Navbar() {
             </div>
         </div>
         <Searchbar />
-        <Introduction />
+        {/* <Introduction /> */}
     </div>
   )
 }

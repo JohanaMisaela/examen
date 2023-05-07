@@ -13,10 +13,14 @@ function Main() {
           <div className="row1">
             
         <Sidebar/>
-        <Introduction />
-        </div>
        
-
+        </div>
+    <div style={{
+  marginTop:"-10em",
+  marginBottom:"13em"
+}}>
+<Introduction />
+  </div>   
         <div className="row2">
         <Cardlist/>
           </div>

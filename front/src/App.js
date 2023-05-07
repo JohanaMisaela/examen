@@ -9,6 +9,7 @@ import Paiement from './pages/Paiement';
 import Viewpro from './pages/Viewpro';
 import Auth from './pages/Auth';
 import Signup from './pages/Signup';
+import Panier from './pages/Panier';
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,8 @@ function App() {
       <Route path="/view" element={<Viewpro />}></Route>
       <Route path="/auth" element={<Auth />}></Route>
       <Route path="/signup" element={<Signup />}></Route>
+      <Route path="/panier" element={<Panier />}></Route>
+
 
 
 
