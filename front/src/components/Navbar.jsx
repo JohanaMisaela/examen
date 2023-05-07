@@ -15,6 +15,7 @@ import {
 
 } from '@fortawesome/free-solid-svg-icons'
 import '../assets/css/style.css'
+import Introduction from './Introduction'
 function Navbar() {
   return (
     <div>
@@ -142,6 +143,7 @@ function Navbar() {
             </div>
         </div>
         <Searchbar />
+        <Introduction />
     </div>
   )
 }

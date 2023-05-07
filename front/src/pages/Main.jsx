@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 import Cardlist from '../components/Cardlist'
+import Introduction from '../components/Introduction'
 
 function Main() {
   return (
@@ -12,6 +13,7 @@ function Main() {
           <div className="row1">
             
         <Sidebar/>
+        <Introduction />
         </div>
        
 
