@@ -12,7 +12,7 @@ function Panier() {
             display:"flex"
         }}>
             <PanierList />
-        <CardPanier />
+            <CardPanier />
         </div>
         
         <Footer />

@@ -12,6 +12,8 @@ import Signup from './pages/Signup';
 import Panier from './pages/Panier';
 import Moncompte from './pages/Moncompte';
 import Information from './pages/Information';
+import Adresse from './pages/Adresse';
+import Historique from './pages/Historique';
 function App() {
   return (
     <div className="App">
@@ -29,12 +31,9 @@ function App() {
       <Route path="/panier" element={<Panier />}></Route> 
       <Route path="/compte" element={<Moncompte />}></Route>
       <Route path="/information" element={<Information />}></Route>
-
-
-
-
-
-    </Routes>
+      <Route path="/adresse" element={<Adresse />}></Route>
+      <Route path="/historique" element={<Historique />}></Route>
+</Routes>
   </BrowserRouter>
     </div>
   );
