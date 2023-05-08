@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
    faUserCircle, 
@@ -29,52 +30,67 @@ function CardCompte() {
          marginLeft:"5%",
          display:"flex"
     }}>
-        <div className="row"  style={{
+     
+          <div className="row"  style={{
          width:"30%",
          height:"250px",
          marginRight:"5%",
          border:"1px solid #ededed"
-    }}>
+    }}><Link to='/information' style={{
+     color:"rgb(114, 110, 110)",
+     }}>
        <FontAwesomeIcon icon={faUserCircle} style={{
         fontSize:"5em",
         marginTop:"0.5em"
-       }}/>
+       }}/> </Link>
        <p className="header" style={{
         textAlign:"center"
        }}>information</p>
         </div>
-        <div className="row"  style={{
+    
+    
+     <div className="row"  style={{
          width:"30%",
          height:"250px",
          marginRight:"5%",
          border:"1px solid #ededed"
 
-    }}>
+    }}> <Link to='/adresse' style={{
+     color:"rgb(114, 110, 110)",
+     }}>
           <FontAwesomeIcon icon={faLocation} style={{
         fontSize:"5em",
         marginTop:"0.5em"
        }}/>
+       </Link>  
        <p className="header" style={{
         textAlign:"center"
        }}>Ajouter adresse
        </p>
        
         </div>
+          
+        
         <div className="row"  style={{
          width:"30%",
          height:"250px",
          border:"1px solid #ededed"
 
     }}>
+     <Link to='/historique' style={{
+          color:"rgb(114, 110, 110)",
+          }}>
           <FontAwesomeIcon icon={faCalendar} style={{
         fontSize:"5em",
         marginTop:"0.5em"
-       }}/>
+       }}/> </Link>
        <p className="header" style={{
         textAlign:"center"
        }}>Historique commande</p>
         
         </div>
+       
+       
     </div>
     <div className="col2" style={{
          width:"90%",

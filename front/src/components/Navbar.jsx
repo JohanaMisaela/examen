@@ -115,12 +115,18 @@ function Navbar() {
                             marginRight:"0.5em", 
                             marginLeft:"0.5em"
                             }}/>
-                        Mon compte
+                            <Link to='/compte' style={{
+                        textDecoration:"none",
+                        color:"#c02b27"
+                    }}>
+                         Mon compte
+                    </Link>
+                       
                     </li>
                 </ul>
                 <ul className='icone'>
                     <li>
-                        <Link >
+                        <Link to='/wish'>
                             <FontAwesomeIcon icon={faHeart} style={{
                                 color:"rgb(114, 110, 110)",
                                 fontSize:"20px",

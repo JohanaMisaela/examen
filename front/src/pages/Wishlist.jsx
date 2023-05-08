@@ -1,9 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import '../assets/css/table.css'
-function Historique() {
+
+function Wishlist() {
   return (
     <div>
             <Navbar/>
@@ -12,7 +11,7 @@ function Historique() {
         marginBottom:"-6em",
         marginTop:"2em",  marginBottom:"2em",
     }}>
- Historique de commande
+ My WishList
     </p>
     <div className="logincard" style={{
 		border:"0"
@@ -43,14 +42,10 @@ function Historique() {
 			
 		</div>	
 	</div>
-	<p className="paragraph" style={{
-		margin:"2em"
-	}}>
-Voici Les Commandes Que Vous Avez Passées Depuis La Création De Votre Compte.</p>
     </div>
     <Footer />
     </div>
   )
 }
 
-export default Historique
+export default Wishlist

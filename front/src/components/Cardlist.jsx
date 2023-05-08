@@ -12,7 +12,7 @@ function Cardlist() {
         </div>
         <div className="card">
             <div className="produitPicture">
-              <Link to='/view'><img src={produit} alt="" /></Link>  
+              <Link to='/viewpro'><img src={produit} alt="" /></Link>  
             </div>
             <div className="produitInfo">
                 <p className="header">Hot pot serie de 03pcs</p>
@@ -31,7 +31,7 @@ Peut garder les aliments chauds ou froids plus longtemps
                     marginLeft:"1em",
                     marginTop:"2em"
                 }}>Avalability : </p>
-                <div className="buttonAdd">
+                <div className="buttonAdd" >
                     <FontAwesomeIcon icon={faCartShopping} style={{
                         color:"white",
                         fontSize:"30px",

@@ -14,6 +14,7 @@ import Moncompte from './pages/Moncompte';
 import Information from './pages/Information';
 import Adresse from './pages/Adresse';
 import Historique from './pages/Historique';
+import Wishlist from './pages/Wishlist';
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,8 @@ function App() {
       <Route path="/information" element={<Information />}></Route>
       <Route path="/adresse" element={<Adresse />}></Route>
       <Route path="/historique" element={<Historique />}></Route>
+      <Route path="/wish" element={<Wishlist />}></Route>
+
 </Routes>
   </BrowserRouter>
     </div>
