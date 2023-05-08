@@ -129,7 +129,7 @@ function Navbar() {
                                 float:'inline-end'
                                 }}/>
                         </Link>
-                        <Link >
+                        <Link  to='/panier' >
                             <FontAwesomeIcon icon={faCartShopping} style={{
                                 color:"rgb(114, 110, 110)",
                                 fontSize:"20px",

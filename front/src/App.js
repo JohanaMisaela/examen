@@ -10,6 +10,8 @@ import Viewpro from './pages/Viewpro';
 import Auth from './pages/Auth';
 import Signup from './pages/Signup';
 import Panier from './pages/Panier';
+import Moncompte from './pages/Moncompte';
+import Information from './pages/Information';
 function App() {
   return (
     <div className="App">
@@ -24,7 +26,9 @@ function App() {
       <Route path="/view" element={<Viewpro />}></Route>
       <Route path="/auth" element={<Auth />}></Route>
       <Route path="/signup" element={<Signup />}></Route>
-      <Route path="/panier" element={<Panier />}></Route>
+      <Route path="/panier" element={<Panier />}></Route> 
+      <Route path="/compte" element={<Moncompte />}></Route>
+      <Route path="/information" element={<Information />}></Route>
 
 
 

@@ -17,6 +17,7 @@ function PanierList() {
         setNombre(nb)
        }
   return (
+    <div>
     <div style={{
         width:"60em",
         height:"auto",
@@ -166,6 +167,16 @@ marginBottom:"2em",
 
         </div>
         </div>
+        
+    </div>
+    <button type="submit" style={{
+        borderRadius:"7px",
+        marginTop:"2em",
+        backgroundColor:"black",
+        padding:"1.5em",
+        marginLeft:"-20em"
+    
+    }}>Continuer mes achats</button>
     </div>
   )
 }
