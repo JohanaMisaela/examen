@@ -8,7 +8,7 @@ function CardPanier() {
         border:"1px solid rgba(0,0,0,.1)",
         marginTop:"15em",
         marginLeft:"10em",
-    marginBottom:"2em"
+    marginBottom:"1em",
         
        
     }}>

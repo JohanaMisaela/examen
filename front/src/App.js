@@ -26,7 +26,7 @@ function App() {
       <Route path="/conditions" element={<Conditions />}></Route>
       <Route path="/mentions" element={<Mentions />}></Route>
       <Route path="/paiement" element={<Paiement />}></Route>
-      <Route path="/view" element={<Viewpro />}></Route>
+      <Route path="/viewpro" element={<Viewpro />}></Route>
       <Route path="/auth" element={<Auth />}></Route>
       <Route path="/signup" element={<Signup />}></Route>
       <Route path="/panier" element={<Panier />}></Route> 

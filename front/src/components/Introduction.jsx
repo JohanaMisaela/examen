@@ -7,9 +7,7 @@ function Introduction() {
         marginTop:"2em",
         height:"200px",
         marginLeft:"40em",
-        marginBottom:'3em',
-
-
+        marginBottom:'3em'
     }}>
         <div className="logobnk" style={{
             width:"5em",

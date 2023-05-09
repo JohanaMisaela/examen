@@ -7,7 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import Hot from '../assets/images/vista.png'
 function PanierList() {
-    const [nombre, setNombre] = useState(0)
+    const [nombre, setNombre] = useState(1)
     const incremente = () =>{
         var nb = nombre +1 ;
         setNombre(nb)
