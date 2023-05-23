@@ -6,6 +6,7 @@ import {
     faTrash
 } from '@fortawesome/free-solid-svg-icons'
 import Hot from '../assets/images/vista.png'
+import { Link } from 'react-router-dom'
 function PanierList() {
     const [nombre, setNombre] = useState(1)
     const incremente = () =>{
@@ -176,7 +177,10 @@ marginBottom:"2em",
         padding:"1.5em",
         marginLeft:"-20em"
     
-    }}>Continuer mes achats</button>
+    }}><Link to='/' style={{
+        textDecoration:"none",
+        color:"white"
+    }} >Continuer mes achats</Link></button>
     </div>
   )
 }

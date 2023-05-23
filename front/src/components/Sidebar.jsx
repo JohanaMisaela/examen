@@ -1,16 +1,19 @@
 import React, {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faAdd, faLaptop, faMobile, faMicrochip, faTv, faHeadphones} from '@fortawesome/free-solid-svg-icons'
+import {faAdd, 
+    faLaptop, 
+    faMobile, 
+    faMicrochip, 
+    faShirt,
+    faTShirt,
+    faChildDress,
+    faBed,
+    faChair,
+    faTableCells
+} from '@fortawesome/free-solid-svg-icons'
 
 function Sidebar() {
-   const  togglePanel= () => {
    
-  const pannel = document.querySelector('.pannel');
-  const isHidden = pannel.style.display === 'none';
-  pannel.style.display = isHidden ? 'block' : 'none';
- }
- 
-
   return (
     
     <div className='sidebar'>
@@ -28,15 +31,7 @@ function Sidebar() {
                     marginRight:"1em"
                     }}/>
                 HighTech
-                <FontAwesomeIcon icon={faAdd} className="faAdd" style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em",
-                    }} 
-                    
-                    />
             </div> 
-           
             <div className="pannel">
                 <div className="sousCat">
                     <FontAwesomeIcon icon={faLaptop} style={{
@@ -56,355 +51,80 @@ function Sidebar() {
                     marginTop:"1em",
                     }}/>Mobile
                 </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faTv} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Télévision
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faHeadphones} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Casques
-                </div>
+               
             </div>
             <div className="cat">
-                <FontAwesomeIcon icon={faMicrochip} style={{
+                <FontAwesomeIcon icon={faShirt} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
                     marginRight:"1em"
                     }}/>
-                HighTech
-                <FontAwesomeIcon icon={faAdd} className="faAdd" style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em",
-                    }} 
-                    
-                    />
+                Vetements 
             </div> 
-           
             <div className="pannel">
                 <div className="sousCat">
-                    <FontAwesomeIcon icon={faLaptop} style={{
+                    <FontAwesomeIcon icon={faTShirt} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
                     marginRight:"1em",
                     marginTop:"1em",
-                    }}/>Laptop
+                    }}/>T-Shirt
                 </div>
                 <div className="sousCat">
-                    <FontAwesomeIcon icon={faMobile} style={{
+                    <FontAwesomeIcon icon={faChildDress} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
                     marginRight:"1em",
                     marginTop:"1em",
-                    }}/>Mobile
+                    }}/>Dress
                 </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faTv} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Télévision
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faHeadphones} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Casques
-                </div>
+                
             </div>
             <div className="cat">
-                <FontAwesomeIcon icon={faMicrochip} style={{
+                <FontAwesomeIcon icon={faBed} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
                     marginRight:"1em"
                     }}/>
-                HighTech
-                <FontAwesomeIcon icon={faAdd} className="faAdd" style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em",
-                    }} 
-                    />
+                Meuble
             </div> 
-           
             <div className="pannel">
                 <div className="sousCat">
-                    <FontAwesomeIcon icon={faLaptop} style={{
+                    <FontAwesomeIcon icon={faTableCells} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
                     marginRight:"1em",
                     marginTop:"1em",
-                    }}/>Laptop
+                    }}/>Table
                 </div>
                 <div className="sousCat">
-                    <FontAwesomeIcon icon={faMobile} style={{
+                    <FontAwesomeIcon icon={faChair} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
                     marginRight:"1em",
                     marginTop:"1em",
-                    }}/>Mobile
+                    }}/>chair
                 </div>
                 <div className="sousCat">
-                    <FontAwesomeIcon icon={faTv} style={{
+                    <FontAwesomeIcon icon={faBed} style={{
                     fontSize:"20px",
                     color:"rgb(114, 110, 110)",
                     marginLeft:"4em",
                     marginRight:"1em",
                     marginTop:"1em",
-                    }}/>Télévision
+                    }}/>Bed
                 </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faHeadphones} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Casques
-                </div>
+               
             </div>
-            <div className="cat">
-                <FontAwesomeIcon icon={faMicrochip} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em"
-                    }}/>
-                HighTech
-                <FontAwesomeIcon icon={faAdd} className="faAdd" style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em",
-                    }} 
-                    />
-            </div> 
-           
-            <div className="pannel">
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faLaptop} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Laptop
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faMobile} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Mobile
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faTv} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Télévision
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faHeadphones} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Casques
-                </div>
-            </div>
-            <div className="cat">
-                <FontAwesomeIcon icon={faMicrochip} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em"
-                    }}/>
-                HighTech
-                <FontAwesomeIcon icon={faAdd} className="faAdd" style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em",
-                    }} 
-                    />
-            </div> 
-           
-            <div className="pannel">
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faLaptop} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Laptop
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faMobile} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Mobile
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faTv} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Télévision
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faHeadphones} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Casques
-                </div>
-            </div>
-            <div className="cat">
-                <FontAwesomeIcon icon={faMicrochip} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em"
-                    }}/>
-                HighTech
-                <FontAwesomeIcon icon={faAdd} className="faAdd" style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em",
-                    }} 
-                    />
-            </div> 
-           
-            <div className="pannel">
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faLaptop} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Laptop
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faMobile} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Mobile
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faTv} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Télévision
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faHeadphones} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Casques
-                </div>
-            </div>
-            <div className="cat">
-                <FontAwesomeIcon icon={faMicrochip} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em"
-                    }}/>
-                HighTech
-                <FontAwesomeIcon icon={faAdd} className="faAdd" style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"13em",
-                    }} 
-                    />
-            </div> 
-           
-            <div className="pannel">
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faLaptop} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Laptop
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faMobile} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Mobile
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faTv} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Télévision
-                </div>
-                <div className="sousCat">
-                    <FontAwesomeIcon icon={faHeadphones} style={{
-                    fontSize:"20px",
-                    color:"rgb(114, 110, 110)",
-                    marginLeft:"4em",
-                    marginRight:"1em",
-                    marginTop:"1em",
-                    }}/>Casques
-                </div>
-            </div>
+    
         </div>
-        <script>
-        const faAdd = document.querySelector('.faAdd');
-f       faAdd.addEventListener('click', togglePanel);
-        </script>
+    
     </div>
   )
 }

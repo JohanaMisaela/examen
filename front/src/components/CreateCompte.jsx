@@ -1,7 +1,35 @@
-import React from 'react'
+import React, {  useState} from 'react'
 import { Link } from 'react-router-dom'
+import axiosInstance from '../../src/axios/instance';
 
 function CreateCompte() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [name, setName] = useState("");
+
+    const signup = async (e) => {
+        e.preventDefault();
+        if (!email || !name || !password) {
+          alert("champ requis")
+          return;
+        }
+        try {
+          const data = { email, password, name }
+          console.log(data);
+          const userInfo = await axiosInstance.post('/auth/login', data);
+          const user = userInfo.data;
+          console.log(user.user)
+          const status = user.user.isAdmin;
+          window.location.href = "/userMain"
+        } catch (err) {
+          alert("invalid credentialls")
+          const error = typeof(error.response.data.message) === 'string' ? error.response.data.message : error.response.data.message[0]
+          
+          console.error(err)
+        }
+    
+  }  
+
   return (
     <div>
     <p className="sousheader" style={{
@@ -12,26 +40,28 @@ function CreateCompte() {
 Creer votre compte
     </p>
      <div className='logincard'>
-        <form>
+        <form onSubmit={signup}>
             <div style={{
                 display:"flex",
                 flexDirection:"row",
                 paddingTop:"5em"
                 
             }}>
-                <label htmlFor="nom" style={{
+                <label htmlFor="name" style={{
                     fontSize:"30px",
                     color:"rgb(114, 110, 110)",
                     fontFamily:"Verdana, Geneva, Tahoma, sans-serif",
                     marginLeft:"13em"
                 }}>Nom : </label>
-                <input type="text" name="" id=""  style={{
+                <input type="text" name="name" id="name"  style={{
                     width:"40em",
                     height:"40px",
                     marginLeft:"13.5em",
                     border:"1px solid #ededed"
                     
-                }}/>
+                }}
+                onChange={(e) => setName(e.target.value)}
+                />
             </div>
             <div style={{
                 display:"flex",
@@ -45,13 +75,15 @@ Creer votre compte
                     fontFamily:"Verdana, Geneva, Tahoma, sans-serif",
                     marginLeft:"13em"
                 }}>Email : </label>
-                <input type="text" name="" id=""  style={{
+                <input type="text" name="email" id=""  style={{
                     width:"40em",
                     height:"40px",
                     marginLeft:"13.5em",
                     border:"1px solid #ededed"
                     
-                }}/>
+                }}
+                onChange={(e) => setEmail(e.target.value)}
+                />
             </div>
             <div style={{
                 display:"flex",
@@ -59,18 +91,20 @@ Creer votre compte
                 paddingTop:"5em"
                 
             }}>
-                <label htmlFor="email" style={{
+                <label htmlFor="password" style={{
                     fontSize:"30px",
                     color:"rgb(114, 110, 110)",
                     fontFamily:"Verdana, Geneva, Tahoma, sans-serif",
                     marginLeft:"13em"
                 }}>Mot de passe : </label>
-                <input type="password" name="" id=""  style={{
+                <input type="password" name="password" id=""  style={{
                     width:"40em",
                     height:"40px",
                     marginLeft:"5em",
                     border:"1px solid #ededed"
-                }}/>
+                }}
+                onChange={(e) => setPassword(e.target.value)}
+                />
             </div> 
             <button type="submit" style={{
                 padding:"1.5em",
@@ -78,8 +112,10 @@ Creer votre compte
                 borderRadius:"7px",
                 backgroundColor:"black",
                 marginTop:"2em"
-            }}>
-                Sauvegarder
+            }}
+            value='Creer compte'
+            >
+                
             </button>
         </form>
 
