@@ -1,7 +1,6 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
-import AdminNavbar from '../../components/AdminNavbar'
+import Footer from '../../components/All/Footer'
+import AdminNavbar from '../../components/Admin/AdminNavbar'
 function AllCommand() {
   return (
     <div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
+import Navbar from '../../components/User/Navbar'
+import Footer from '../../components/All/Footer'
 import '../../assets/css/table.css'
 function Historique() {
   return (

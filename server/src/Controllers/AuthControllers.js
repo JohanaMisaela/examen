@@ -4,13 +4,14 @@ const UserModel = require("../Models/AuthModels");
 const maxAge = 3 * 24 * 60 * 60 * 1000;
 
 const login = async (req, res) => { 
-  const { username, pin } = req.body; 
+  const { email, password } = req.body; 
   try {
-    const user = await UserModel.getUserByUserNameAndPin(username, pin);
+    const user = await UserModel.getUserByUserByEmailAndPassword(email, password);
     if(user){
       const token = jwt.sign({ userId: user.id, isAdmin: user.isAdmin }, 'secret-key');
       res.cookie('jwt', token, { httpOnly: true, maxAge });
       res.status(200).json({ user, token });
+      console.log("connected")
     } else {
       res.status(404).json({ message: "Email or password incorrect"})
     }
@@ -20,10 +21,9 @@ const login = async (req, res) => {
 };
 
 const signin = async (req, res) => { 
-  const { username, pin } = req.body; 
-  console.log(username, pin)
+  const { name, email, password } = req.body; 
   try {
-    const user = await UserModel.insertUserByUserNameAndPin(username, pin);
+    const user = await UserModel.insertUserByUserByEmailAndPassword(name, email, password);
    
     if(user){
       const token = jwt.sign({ userId: user.id }, 'secret-key');

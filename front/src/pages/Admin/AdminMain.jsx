@@ -1,9 +1,9 @@
 import React from 'react'
-import Sidebar from '../../components/Sidebar'
-import Footer from '../../components/Footer'
-import Cardlist from '../../components/Cardlist'
-import Introduction from '../../components/Introduction'
-import AdminNavbar from '../../components/AdminNavbar'
+import Sidebar from '../../components/All/Sidebar'
+import Footer from '../../components/All/Footer'
+import Cardlist from '../../components/All/Cardlist'
+import Introduction from '../../components/All/Introduction'
+import AdminNavbar from '../../components/Admin/AdminNavbar'
 
 function AdminMain() {
   return (

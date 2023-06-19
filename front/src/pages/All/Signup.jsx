@@ -1,7 +1,7 @@
 import React from 'react'
-import CreateCompte from '../../components/CreateCompte'
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
+import CreateCompte from '../../components/Auth/CreateCompte'
+import Navbar from '../../components/User/Navbar'
+import Footer from '../../components/All/Footer'
 function Signup() {
   return (
     <div>

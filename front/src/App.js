@@ -13,6 +13,7 @@ import Wishlist from './pages/User/Wishlist';
 import Additem from './pages/Admin/Additem';
 import AllCommand from './pages/Admin/AllCommand';
 import AdminMain from './pages/Admin/AdminMain';
+import ListItem from './pages/Admin/ListItem';
 
 import Auth from './pages/All/Auth';
 import Signup from './pages/All/Signup';
@@ -41,6 +42,7 @@ function App() {
       <Route path="/additem" element={<Additem />}></Route>
       <Route path="/allcommand" element={<AllCommand />}></Route>
       <Route path="/admin" element={<AdminMain />}></Route>
+      <Route path="/listItem" element={<ListItem />}></Route>
 //all routes
       <Route path="/auth" element={<Auth />}></Route>
       <Route path="/signup" element={<Signup />}></Route>

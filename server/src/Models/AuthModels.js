@@ -2,10 +2,11 @@
 const db = require('../Config/db');
 
 const UserModel = {
-    getUserByUserNameAndPin: (username, password) => {
+
+    getUserByUserByEmailAndPassword: (email, password) => {
         return new Promise((resolve, reject) => {
-            const query = "SELECT * FROM Auth WHERE userName = ? AND password = ?";
-            db.query(query, [username, password], function(err, result) {
+            const query = "SELECT * FROM Auth WHERE email = ? AND password = ?";
+            db.query(query, [email, password], function(err, result) {
                 if (err) {
                     reject(err); // Rejeter la promesse en cas d'erreur
                     console.log(err)
@@ -15,9 +16,9 @@ const UserModel = {
             });
         });
     },
-    insertUserByUserEmailAndPwd: (name, password, email) => {
+    insertUserByUserByEmailAndPassword: (name, email, password) => {
         return new Promise((resolve, reject) => {
-            const query = "INSERT INTO `Auth`( `email`, `password`, `Name`) VALUES (?,?,?)";
+            const query = "INSERT INTO `Auth` ( `email`, `password`, `Name`, `alias`, `adresse`, `ville`, `pays`, `tva`, `societe`,`isAdmin`) VALUES (?,?,?,'','','','','','',0)";
             db.query(query, [email,password, name], function(err, result) {
                 if (err) return reject(err);
                 resolve(result[0]);

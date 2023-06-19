@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
-import CardCompte from '../../components/CardCompte'
+import Navbar from '../../components/User/Navbar'
+import Footer from '../../components/All/Footer'
+import CardCompte from '../../components/All/CardCompte'
 
 function Moncompte() {
   return (

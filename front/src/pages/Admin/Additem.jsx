@@ -1,7 +1,7 @@
 import React from 'react'
-import AddCard from '../../components/AddCard'
-import Footer from '../../components/Footer'
-import AdminNavbar from '../../components/AdminNavbar'
+import AddCard from '../../components/Admin/AddCard'
+import Footer from '../../components/All/Footer'
+import AdminNavbar from '../../components/Admin/AdminNavbar'
 
 function Additem() {
   return (

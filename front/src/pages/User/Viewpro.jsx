@@ -1,8 +1,8 @@
 import React from 'react'
-import ViewItem from '../../components/ViewItem'
-import Navbar from '../../components/Navbar'
-import Sidebar from '../../components/Sidebar'
-import Footer from '../../components/Footer'
+import ViewItem from '../../components/All/ViewItem'
+import Navbar from '../../components/User/Navbar'
+import Sidebar from '../../components/All/Sidebar'
+import Footer from '../../components/All/Footer'
 
 function Viewpro() {
   return (

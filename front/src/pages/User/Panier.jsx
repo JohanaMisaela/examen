@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
-import PanierList from '../../components/PanierList'
-import CardPanier from '../../components/CardPanier'
+import Navbar from '../../components/User/Navbar'
+import Footer from '../../components/All/Footer'
+import PanierList from '../../components/User/PanierList'
+import CardPanier from '../../components/User/CardPanier'
 
 function Panier() {
   return (
